@@ -29,3 +29,9 @@ cd spark-1.0.0
 
 # Building spark
 ./sbt/sbt assembly
+
+# Clean-up
+rm scala-2.11.1.deb
+rm sbt.deb
+rm spark-1.0.0.tgz
+rm install.sh
