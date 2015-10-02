@@ -23,9 +23,12 @@ sudo apt-get -y update
 sudo apt-get -y install sbt
 
 # Downloading spark
-wget http://d3kbcqa49mib13.cloudfront.net/spark-1.0.0.tgz
-tar -zxf spark-1.0.0.tgz
-cd spark-1.0.0
+# wget http://d3kbcqa49mib13.cloudfront.net/spark-1.0.0.tgz
+wget http://www.apache.org/dyn/closer.lua/spark/spark-1.5.1/spark-1.5.1.tgz
+# tar -zxf spark-1.0.0.tgz
+tar -zxf spark-1.5.1.tgz
+# cd spark-1.0.0
+cd spark-1.5.1
 
 # Building spark
 ./sbt/sbt assembly
